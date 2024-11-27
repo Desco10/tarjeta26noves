@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta Interactiva con Multimedia</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <!-- Parte Frontal -->
+      <div class="card-face card-front">
+        <img src="https://images.pexels.com/photos/19436035/pexels-photo-19436035/free-photo-of-carretera-rojo-vehiculo-superdeportivo.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load " alt="Foto Principal" class="main-photo">
+
+        <div class="nombrefront">
+        <h1>Pit Stop Perfecto </h1>
+      </div>
+        <div class="textosfront">
+        <p contenteditable="true" id="address">Dirección: Calle Principal 123</p>
+        <p contenteditable="true" id="phone">Teléfono: +57 300 123 4567</p>
+        <p contenteditable="true" id="email">Correo: ejemplo@correo.com</p>
+      </div>
+        <button class="toggle-button">Ver Más</button>
+
+        <!-- Redes Sociales -->
+<!-- Redes Sociales -->
+<div class="social-media">
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/tu_pagina" target="_blank" class="social-icon" title="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4267B2" width="40px" height="40px">
+          <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12v-9.293H9.428V10.58H12V8.181c0-2.573 1.525-3.987 3.858-3.987 1.11 0 2.284.198 2.284.198v2.503h-1.286c-1.268 0-1.663.789-1.663 1.601v1.84h3.227l-.516 3.127h-2.711V24h5.316c.73 0 1.325-.593 1.325-1.324V1.325C24 .593 23.407 0 22.675 0z"/>
+      </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E4405F" width="40px" height="40px">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.265.07 1.645.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.265.058-1.645.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308 1.265-.058 1.645-.07 4.85-.07zm0 1.837c-3.15 0-3.507.012-4.737.067-1.057.045-1.636.22-2.016.377a3.418 3.418 0 00-1.235.815 3.418 3.418 0 00-.815 1.235c-.157.38-.332.959-.377 2.016-.055 1.23-.067 1.586-.067 4.737s.012 3.507.067 4.737c.045 1.057.22 1.636.377 2.016.157.38.378.716.815 1.235.415.415.855.658 1.235.815.38.157.959.332 2.016.377 1.23.055 1.586.067 4.737.067s3.507-.012 4.737-.067c1.057-.045 1.636-.22 2.016-.377a3.418 3.418 0 001.235-.815 3.418 3.418 0 00.815-1.235c.157-.38.332-.959.377-2.016.055-1.23.067-1.586.067-4.737s-.012-3.507-.067-4.737c-.045-1.057-.22-1.636-.377-2.016a3.418 3.418 0 00-.815-1.235 3.418 3.418 0 00-1.235-.815c-.38-.157-.959-.332-2.016-.377-1.23-.055-1.586-.067-4.737-.067zm0 5.838a5.999 5.999 0 100 12 5.999 5.999 0 100-12zm0 1.837a4.163 4.163 0 110 8.326 4.163 4.163 0 010-8.326zm6.406-.406a1.055 1.055 0 110 2.11 1.055 1.055 0 010-2.11z"/>
+      </svg>
+  </a>
+
+  <!-- Twitter -->
+  <a href="https://twitter.com" target="_blank" class="social-icon" title="Twitter">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DA1F2" width="40px" height="40px">
+          <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.608 1.794-1.574 2.163-2.723-.949.555-2.001.959-3.127 1.184-.897-.958-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124-4.09-.205-7.72-2.164-10.15-5.144-.426.722-.666 1.561-.666 2.475 0 1.71.87 3.216 2.188 4.099-.807-.026-1.566-.248-2.228-.616v.062c0 2.388 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.623-.03-.922-.086.623 1.951 2.432 3.374 4.576 3.413-1.675 1.309-3.786 2.091-6.075 2.091-.394 0-.779-.023-1.161-.067 2.165 1.394 4.733 2.209 7.49 2.209 8.988 0 13.91-7.457 13.91-13.91 0-.21 0-.422-.015-.632.961-.691 1.8-1.56 2.46-2.548z"/>
+      </svg>
+  </a>
+</div>
+
+        <!-- Botones -->
+        <div class="action-buttons">
+          <a href="https://wa.me/573143416441" target="_blank" class="action-btn whatsapp">WhatsApp</a>
+          <a href="https://www.miempresa.com" target="_blank" class="action-btn website">Página Web</a>
+        </div>
+
+        <!-- Galería -->
+        <div class="gallery">
+          <img src="https://images.pexels.com/photos/19896347/pexels-photo-19896347/free-photo-of-coche-rural-frente-parte-delantera.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Producto 1">
+          <img src="https://images.pexels.com/photos/10918027/pexels-photo-10918027.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Producto 2">
+          <img src="https://images.pexels.com/photos/9381018/pexels-photo-9381018.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Producto 3">
+        </div>
+        
+      </div>
+
+      
+      <!-- Parte Trasera -->
+      <div class=" card-face card-back">
+        <h2>Más Información</h2>
+        <div class="blog-section">
+          <h3>Proyectos</h3>
+          <p contenteditable="true">servimos de calidad  en el control   de su vehiculo , lo  modificamos  ,lo recuperamos , lo volvemos a  dejar funcional.</p>
+        </div>
+
+        <!-- Galería Multimedia -->
+        <div class="multimedia-section">
+          
+          <div class="textosatras1">
+          <h3>Mis <br/>servicios </h3>
+          <h5>  Reparación de Luces<br/>
+            Descripción: Ajuste y cambio de luces delanteras, traseras y señalización para máxima visibilidad. </h5>
+          </div>
+
+            <div class="media-gallery">
+            <img src="https://images.pexels.com/photos/14688405/pexels-photo-14688405.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Imagen 1">
+            <div class="textosatras2">
+            <h4> Mantenimiento de Motor<br/>
+              Descripción: Diagnóstico y ajuste para mantener el motor en perfecto estado y con alto rendimiento. </h4>
+            </div>
+
+              <img src="https://images.pexels.com/photos/18972066/pexels-photo-18972066/free-photo-of-carretera-coche-vehiculo-mercedes.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Imagen 2">
+           
+              <div class="textosatras3">
+              <h4>Pintura Automotriz<br/>
+              Descripción: Restauración y retoque de pintura para un acabado impecable y como nuevo. </h4>
+            </div>
+
+            <section id="videoSection">
+                <video id="miVideo" muted controls width="600">
+                  <source src="https://videos.pexels.com/video-files/3066463/3066463-uhd_2732_1440_24fps.mp4" type="video/mp4">
+                  Tu navegador no soporta el elemento de video.
+                </video>
+              
+            </section>
+            <div class="video-message">
+                <h2>¡Bienvenido!</h2>
+                <p>contactanos </p>
+            </div>
+       
+        
+            <div>
+            <button class="back-button">Regresar</button>
+           
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
