@@ -476,3 +476,22 @@ body {
         scroll-snap-align: start;
     }
     
+    .linked-image {
+      text-align: center;
+      margin: 20px 0;
+  }
+  
+  .linked-image img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+  }
+  
+  .linked-image img:hover {
+      transform: scale(1.05);
+      border-color: #007BFF;
+  }
+  
